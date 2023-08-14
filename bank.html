@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK OF CHAMBER</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3399/3399228.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="m-10">
+        <div class="flex justify-evenly items-center">
+            <button id="goback" class="rounded-full px-5 py-2 text-lg bg-indigo-400"> GO BACK</button>
+            <h1 class="text-7xl text-center">Welcome To Bank of <span class="font-semibold text-indigo-400">CHAMBER</span> !!!</h1>
+        </div>
+    </header>
+    <main>
+        <section class="m-10">
+            <div class="grid grid-cols-3 gap-5">
+                <div class="w-9/12 mx-auto p-5 w-3/6 bg-indigo-400 rounded-xl">
+                    <h1 class="text-5xl text-center font-semibold mb-5">DEPOSIT</h1>
+                    <h3 class="text-5xl text-center font-semibold mb-5">$<span id="deposit_span">00</span></h3>
+                </div>
+                <div class="p-5 w-9/12 bg-rose-400 rounded-xl">
+                    <h1 class="text-5xl text-center font-semibold mb-5">WITHDRAW</h1>
+                    <h3 class="text-5xl text-center font-semibold">$<span id="withdraw_span">00</span></h3>
+                </div>
+                <div class="p-5 w-9/12 bg-orange-400 rounded-xl">
+                    <h1 class="text-5xl text-center font-semibold mb-5">BALANCE</h1>
+                    <h3 class="text-5xl text-center font-semibold">$<span id="balance_span">100</span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="m-10">
+            <div class="grid grid-cols-2 gap-5">
+                <div class="bg-teal-400 p-4 rounded-xl">
+                    <h1 class="text-5xl text-center mb-5">DEPOSIT YOUR MONEY</h1>
+                    <div>
+                        <input type="number" name="" id="deposit_field" class="w-9/12 rounded-xl h-10 px-5" placeholder="$ Deposit Your Amount">
+                        <button class="bg-indigo-400 px-5 p-2 rounded-xl ml-10 hover:bg-red-400 text-white text-xl" id="btn_deposit">
+                            Deposit
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-sky-400 p-4 rounded-xl">
+                    <h1 class="text-5xl text-center mb-5">WITHDRAW YOUR MONEY</h1>
+                    <div>
+                        <input type="number" name="" id="withdraw_field" class="w-9/12 rounded-xl h-10 px-5" placeholder="$ Withdraw Your Amount">
+                        <button class="bg-rose-400 px-5 p-2 rounded-xl ml-10 hover:bg-indigo-400 text-white text-xl" id="btn_withdraw">
+                            Deposit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./Js/bank.js"></script>
+    <script src="./Js/deposit.js"></script>
+    <script src="./Js//withdraw.js"></script>
+</body>
+</html>
